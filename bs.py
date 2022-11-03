@@ -42,8 +42,6 @@ def scrape():
 scrape()
 
 
-# IMPORT DATA to CSV
-
 stars_data = []
 
 
@@ -67,4 +65,4 @@ headers = ['Star_name','Distance','Mass','Radius','Luminosity']
 
 star_df_1 = pd.DataFrame(stars_data, columns=headers)
 
-star_df_1.to_csv('scraped_data.csv',index=True, index_label="id")
+star_df_1.to_csv('sd.csv',index=True, index_label="id")
